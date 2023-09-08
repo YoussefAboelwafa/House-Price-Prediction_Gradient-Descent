@@ -1,5 +1,7 @@
 # Gradiant-Descent_Linear-Regression
 *This is Gradiant Descent Algorithm to minimize the cost function for linear regression models*
+![gradiant-descent](https://github.com/YoussefAboelwafa/Gradiant-Descent_Linear-Regression/assets/96186143/d3056132-ada7-49d9-b303-7bb1da172640)
+
 
 <a name="toc_40291_2.1"></a>
 ## Gradient descent summary

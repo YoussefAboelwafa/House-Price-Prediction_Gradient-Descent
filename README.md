@@ -1,7 +1,7 @@
 # Gradiant-Descent_Linear-Regression
 
 *This is Gradiant Descent Algorithm to minimize the cost function for linear regression models*
-![gradiant-descent](https://github.com/YoussefAboelwafa/Gradiant-Descent_Linear-Regression/assets/96186143/d3056132-ada7-49d9-b303-7bb1da172640)
+![gradiant-descent](https://github.com/YoussefAboelwafa/House-Price-Prediction_Gradiant-Descent/assets/96186143/09434ff9-66fd-4308-b623-b6beddafe258)
 
 <a name="toc_40291_2.1"></a>
 
@@ -39,7 +39,8 @@ You will implement gradient descent algorithm for one feature. You will need thr
 - `gradient_descent`, utilizing compute_gradient and compute_cost
   <br>
 
-![gd](https://github.com/YoussefAboelwafa/Gradiant-Descent_Linear-Regression/assets/96186143/c7ee5257-c2ea-44d7-b2a0-d9dc52518fbe)
+![gd](https://github.com/YoussefAboelwafa/House-Price-Prediction_Gradiant-Descent/assets/96186143/63d8ead3-d25d-47f5-8ffa-1b48d4ee7227)
+
 
 ## Code Implementation
 ```python

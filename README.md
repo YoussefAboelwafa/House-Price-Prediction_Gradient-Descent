@@ -34,8 +34,8 @@ $$
 
 You will implement gradient descent algorithm for one feature. You will need three functions.
 
-- `compute_gradient` implementing equation (4) and (5) above
-- `compute_cost` implementing equation (2) above (code from previous lab)
+- `compute_gradient`
+- `compute_cost`
 - `gradient_descent`, utilizing compute_gradient and compute_cost
   <br>
 

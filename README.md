@@ -14,13 +14,17 @@ You will implement gradient descent algorithm for one feature. You will need thr
 
 - `compute_gradient`
 - `compute_cost`
-- `gradient_descent`, utilizing compute_gradient and compute_cost
+- `gradient_descent`
   <br>
 
 ![gd](https://github.com/YoussefAboelwafa/House-Price-Prediction_Gradiant-Descent/assets/96186143/63d8ead3-d25d-47f5-8ffa-1b48d4ee7227)
 
 
 ## Code Implementation
+### Functions Definition
+
+
+
 ```python
 import math, copy
 import numpy as np
@@ -87,6 +91,9 @@ def gradient_descent(
     return w, b, J_history, p_history  # return w and J,w history for graphing
 ```
 
+### Load data & Call gradient_descent
+
+
 
 ```python
 # Load our data set
@@ -98,7 +105,7 @@ w_init = 0
 b_init = 0
 # some gradient descent settings
 iterations = 100000
-tmp_alpha = 1.0e-2
+tmp_alpha = 9.0e-2
 # run gradient descent
 w_final, b_final, J_hist, p_hist = gradient_descent(
     x_train,
@@ -116,12 +123,15 @@ print(f"(w,b) found by gradient descent: ({w_final:.4f},{b_final:.4f})")
     (w,b) found by gradient descent: (68.1034,244.8276)
 
 
+### Plot the training data
+
+
 
 ```python
 plt.scatter(x_train, y_train, marker="x", color="r")
 plt.plot(x_train, w_final * x_train + b_final, color="b")
-plt.xlabel("Size (sqtf)")
-plt.ylabel("Price ($)")
+plt.xlabel("Size (1000sqtf)")
+plt.ylabel("Price (1000$)")
 plt.title("House Price Prediction")
 plt.grid(True)
 plt.show()
@@ -129,15 +139,18 @@ plt.show()
 
 
 
-![png](images/output_2_0.png)
+![png](images/output_5_0.png)
 
+
+
+### Plot the prediction
 
 
 
 ```python
 plt.scatter(x_train, y_train, marker="x", color="r")
 plt.plot(x_train, w_final * x_train + b_final, color="b")
-plt.xlabel("Size (sqtf)")
+plt.xlabel("Size (1000sqtf)")
 plt.ylabel("Price (1000$)")
 plt.title("House Price Prediction")
 plt.grid(True)
@@ -157,8 +170,30 @@ print(f"6000 sqft house prediction {w_final*6.0 + b_final:0.1f} Thousand dollars
 
 
 
-![png](images/output_3_0.png)
+![png](images/output_7_0.png)
 
 
 
     6000 sqft house prediction 653.4 Thousand dollars
+
+
+### Plot the cost function VS number of iterations
+
+
+
+```python
+nb_iterations = np.arange(1, 100)
+j = J_hist[1:100]
+plt.plot(nb_iterations, j, color="b")
+plt.xlabel("Number of iterations")
+plt.ylabel("Cost J")
+plt.title("Cost J vs. Number of iterations")
+plt.xlim(0, 100)
+plt.ylim(0, 10000)
+plt.show()
+```
+
+
+
+![png](images/output_9_0.png)
+    

@@ -1,4 +1,4 @@
-# Gradient-Descent_Linear-Regression
+# House Price Prediction using **Gradient Descent** Algorithm for Linear Regression
 
 *This is Gradient Descent Algorithm Implementation to minimize the cost function for linear regression models*
 ![gradiant-descent](https://github.com/YoussefAboelwafa/House-Price-Prediction_Gradiant-Descent/assets/96186143/09434ff9-66fd-4308-b623-b6beddafe258)
